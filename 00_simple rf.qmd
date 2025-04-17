@@ -1,0 +1,41 @@
+---
+title: "00_simple rf"
+format: html
+editor: visual
+---
+
+## Building intuition with complexity
+
+Steps in this document:
+
+-   Build a **simple RF** containing exposures (PM2.5, O3, NO2, heat) during the first 20 weeks of pregnancy. Use spatial cross-validation. The outcome is placental insufficiency (note: sensitivity to the defining criteria will be assessed separately).
+
+    -   [Side note:]{.underline} maybe ensure that each exposure actually improves the model fit?
+
+-   **Extend** the simple RF to include confounders (not proper adjustment). Interpret variable importance, etc., and **compare model fit** against the first RF model.
+
+-   **Extend** the simple random forest to include spatial and temporal basis functions. Interpret variable importance, etc., and **compare model fit** against the previous two models.
+
+Next steps will be to run the RF with a long structure, i.e., person-time, to analyze all weeks of exposure. This will allow for time-to-event analysis. Then we'll go causal. (And separately, we'll use Cox proportional hazard.)
+
+## Step 1. Prepare data for exposure model
+
+...
+
+```{r}
+
+```
+
+...
+
+## Step 2. Exposure-only RF
+
+```{r}
+
+```
+
+
+
+
+
+
